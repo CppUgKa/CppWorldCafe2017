@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <link rel="stylesheet" type="text/css" href="textColors.css" />
+  </head>
+  <style>
+    #lChild {
+    float: left;
+    border-style: ridge;
+    width: 44%;
+    }
+    #rChild {
+    float: right;
+    border-style: ridge;
+    width: 54%;
+    }
+    #onlyChild {
+    clear: both;
+    width: 100%;
+    }
+
+  </style>
+  <body>
+    <h1>C++ World Caf&eacute</h1>
+    <h2>At the C++ UG Karlsruhe on June 14th 2017</h2>
+
+<h3>TL;DR</h3>
+
+The C++ World Caf&eacute discussion format helps to get a broad and current overview of some C++ topics, to get to know peer developers, and is a lot of fun. Our C++ World Caf&eacute got support from four C++ gurus from around the world: Anthony Williams, Jason Turner, Robert Ramey, and Walter Bright. 
+We investigated the following 4 questions:
+<p>
+  <p id="lChild"><img src="pics/JasonTurner.jpg" alt="Jason Turner" style="float:left;height:100px;margin:0px 10px;">
+      How can I become a <b>better C++ developer</b>?
+      </br></br>
+      Skype session: <a href="http://articles.emptycrate.com/about.html">Jason Turner</a>
+      </br></br>Table Host: Robert Schneider
+    </p>
+    <p id="rChild"><img src="pics/RobertRamey.jpg" alt="Robert Ramey" style="float:left;height:100px;margin:0px 10px;">
+      Which <b>libraries/frameworks</b> are most helpful for me, and why?
+      </br></br>
+      Skype session: <a href="http://www.rrsd.com/index.htm">Robert Ramey</a> 
+      </br></br>
+      Table Host: <a href="https://www.linkedin.com/in/ralf-mikulla-01329871/?ppe=1">Ralf Mikulla</a>
+    </p>
+</p>
+<p>
+      <p id="lChild"><img src="pics/WalterBright.jpg" alt="Walter Bright" style="float:left;height:100px;margin:0px 10px;">
+      How does the <b>compiler</b> help/hinder me?
+      </br></br>
+      Skype session: <a href="http://www.walterbright.com">Walter Bright</a>
+      </br></br>
+      Table Host: <a href="http://pp.info.uni-karlsruhe.de/personhp/andreas_zwinkau.php">Andreas Zwinkau</a>
+    </p>
+    <p id="rChild"><img src="pics/AnthonyWilliams.jpg" alt="Anthony Williams" style="float:left;height:100px;margin:0px 10px;">
+      Which features and advantages does C++ offer for <b>parallelization</b>?
+      </br></br>
+      Skype session: <a href="https://www.justsoftwaresolutions.co.uk">Anthony Williams</a> 
+      </br></br>
+       Table Host: <a href="https://panthema.net/about/">Timo Bingmann</a>
+    </p>
+</p>
+<p id="onlyChild"></p>
+
+<h3>Introduction</h3>
+
+The C++ user group Karlsruhe organized a <b>World Caf&eacute</b> at <a href="https://www.meetup.com/de-DE/C-User-Group-Karlsruhe/events/238747565/">one of its last meetups</a>, to have everyone in the group involved in discussions, and to get a broad overview of some C++ topics. In our World Caf&eacute format, small groups of 4-6 people sit together at each table to discuss about a given question for 30 minutes, noting down their findings. This constitutes a round, with 4 rounds in total. All but each table's host switch tables each round, and the table host introduces the topic and previous findings to the new-comers. Each table discusses a different question. 
+
+To have a satisfying event and help the table hosts, we set the following <b>goals</b> for our C++ Word Caf&eacute:
+<ul>
+<li>gather information about the topic, so that we learn, as well as collect what topics our C++ user group is interested in</li>
+<li>motivate discussions and getting to know each other</li>
+<li>have fun.</li>
+</ul>
+
+To make sure the goals are reached, we got support from the <b>C++ gurus</b> Anthony, Jason, Robert, and Walter (our "ask the expert" lifelines, so to speak): at the last round, each table started a Skype session with one of those gurus. They gave us feedback and answers to open questions, motivated everybody to engage in the discussion, and made the whole event really fun. To give you an impression, here are our results:
+
+<h3>How can I become a better C++ developer?</h3>
+
+In the first three rounds, we brainstormed about
+<ul>
+<li>what a good software developer in general and a good C++ developer is, including their character traits, tasks within a team, and abstraction capabilities</li>
+<li>what actions to take to become better, including practicing in projects and using the C++ standard library(-conventions)</li>
+<li>where to get information to improve, covering books, mentors and learning from problems.</li>
+</ul>
+
+In the fourth and last round, Jason Turner joined in via Skype, and
+<ul>
+<li>answered a lot of open questions we had;</li>
+<li>brainstormed with us about technical aspects like rolling your own array_view, effects of boost::spirit or std::unordered_map or constexpr on compile times, and recursion in a lambda without using std::function;</li>
+<li>made the event feel like a part :)</li>
+</ul>
+
+Further material:
+<ul>
+<li>The notes our table host Robert made from the first three rounds;</li>
+<li>the video and pure audio track of the Skype session with Jason;</li>
+<li>the transcript of the Skype session with Jason.</li>
+</ul>
+
+<h3>Which libraries/frameworks are most helpful for me, and why?</h3>
+
+In the first three rounds, different libraries and their use was discussed. The focus, however, was on problems when using libraries, covering the following four points:
+<ol>
+<li>triangle between learning, enabling, and efficiency;</li>
+<li>documentation;</li>
+<li>managing dependencies;</li>
+<li>managing patches.</li>
+</ol>
+
+In the fourth and last round, Robert Ramey joined in via Skype, commented on the four points above and then went into detail about economics, responsibilities and testing:
+<ol>
+<li>Getting a library right entails a lot more effort then first meets the eye. Hence many redo something already present, even though it is not economic.</li>
+<li>Weak documentation is a running festering sore in the whole software development community. Robert covers this in many of his presentations at CppCon.</li>
+<li>People have had unrealistic expectations about automatic dependency managers; you have to make the dependency related to your particular application.</li>
+</ol>
+Furthermore: 
+<ul>
+<li>Content creators should be compensated for their work, but that is a pipe dream right now.</li>
+<li>If you use an open source library in your project, you are still responsible for your project to work, and thus for the library to work in your context.</li>
+<li>Run the boost test suite that comes with a boost library to certify the library on your platform. Unfortunately, running the tests is a pain in the neck. It should be totally idiot proof, so the library developer can demand the users to run the tests on their platform.</li>
+</ul>
+
+Further material:
+<ul>
+<li>the audio track of the Skype session with Robert;</li>
+<li>the transcript of the Skype session with Robert.</li>
+</ul>
+
+
+<h3>Which features and advantages does C++ offer for parallelization?</h3>
+
+In all the first three rounds, as well as the last round together with Anthony Williams, we
+<ul>
+<li>gathered a great big picture: parallelization is a broad field, complex, but necessary;</li>
+<li>saw that C++ is very well suited for parallelization: it enables a lot of powerful solutions since you can go down to the bare metal. No matter what you wish for, C++ offers a suitable library or at least TS or proposal.</li>
+<li>covered many features and facets: Boost.Asio and strands, concurrency TS, coroutines, executor, HPX, memory model, MPI, OpenMP, parallel STL, pipelines, SIMD, std::atomics, std::lock_guard, synchronization, thread pools, TSan.</li>
+</ul>
+
+In the fourth and last round, Anthony Williams joined in via skype, and
+<ul>
+<li>showed us aspects and features about parallel programming in C++ that we had missed;</li>
+<li>granted us all our wishes;</li>
+<li>helped us get an overview of many TSs and proposals covering parallelization in C++.</li>
+</ul>
+
+Further material:
+<ul>
+<li>a collage of the notes written on the table over all four rounds;</li>
+<li>the video and pure audio track of the Skype session with Anthony;</li>
+<li>the transcript of the Skype session with Anthony.</li>
+</ul>
+
+<h3>How does the compiler help/hinder me?</h3>
+
+In the first three rounds, the discussions covered warnings and error messages, meta programming, linking, assertions, code analysis, optimizations, undefined behavior, and buggy compilers.
+
+In the fourth and last round, Walter Bright joined in via skype, gave feedback to many previous discussed items and answered some new questions that came up, covering
+<ul>
+<li>code analysis with sanitizers, PVS Studio, Coverity, and using D instead of C++;</li>
+<li>considering assembler code for performance, to avoid timing attacks, why some resist looking at it, and possible tooling;</li>
+<li>using different compilers for finding more bugs, increasing portability, and because each has its own style;</li>
+<li>the tradeoff between the diagnostic information of assertions and their runtime;</li>
+<li>integrating linking into the compiler for better diagnostics and faster build times;</li>
+<li>how compilers can improve their error messages, e.g. using spell checking, colorizing, and printing out the offending line;</li>
+<li>the language D, which has the best C++ interoperability among the modern languages, builds faster and causes fewer bugs.</li>
+</ul>
+
+Further material:
+<ul>
+<li>a picture of the notes written on the table over the first three rounds;</li>
+<li>the audio track of the Skype session with Walter;</li>
+<li>the transcript of the Skype session with Walter.</li>
+</ul>
+
+<h3>Conclusion</h3>
+
+Though a bit of work to prepare, our C++ World Caf&eacute was a <b>big success</b> since we achieved all goals: We covered a vast amount of aspects for each question and had really fun discussions. A big thanks to Anthony, Jason, Robert, and Walter for their support, to Andreas, Ralf, Robert, and Timo for their moderation, and to Clausmark GmbH for their sponsoring. Also a big pardon for the technical difficulties we had, and thanks to <a href="http://www.freelancers.com.au/attach/3894.pdf?1498056650">Mark Edwards</a> for post-processing the audio to improve the quality as much as possible.
+
+Which leads to our experience with and <b>advice</b> for the C++ World Caf&eacute format: To achieve the aforementioned goals, do one in your user group or even at a conference, since it scales well with the number of participants! The <a href="http://www.theworldcafe.com/wp-content/uploads/2015/07/Cafe-To-Go-Revised.pdf">general advice for World Caf&eacutes</a> are quite accurate and helpful. They do focus preparation too much on finding good questions, I think, because that is rather easy for a C++ World Caf&eacute. Further questions could be:
+<ul>
+<li>What are the strengths and weaknesses of C++?</li>
+<li>How should the C++ landscape evolve?</li>
+<li>Which tools help me most in my C++ development, and how?</li>
+<li>Why is functional programming becoming more and more important in C++? (see http://www.grimm-jaud.de/index.php/blog/and-the-winners-are)</li>
+<li>What are the strengths and weaknesses of C++ template meta programming?</li>
+<li>How can I avoid/find/fix/learn from bugs?</li>
+</ul>
+The preparation of the tables was also simpler than you would expect from the World Caf&eacute advice; just throw a paper table cloth (available cheaply in larger food or drug stores) over your tables to write on, and put some cookies on top.
+
+Rather put your energy into the preparation for the <b>moderation and equipment</b>: find your table hosts early on, not spontaneously at the meeting, since you need to find people who know about the respective topic, and to brief them about the C++ World Caf&eacute format. If you include Skype sessions, you have all the challenges that audio and video recordings entail, multiplied by the number of tables: Each table must have Skype online and running. Running in a quiet environment, that is! While it is simple for a human ear to tune out the noise from the neighbor table, this is no longer possible once sound has been recorded through a laptop microphone, as you can unfortunately hear in some of our recordings. Sorry Jason and Robert, and thanks for handling it so well. My rule of thumb: at the very least, have 10 meters distance between each two tables. If you are recording the Skype sessions, experiment with the Sykpe or screen/audio recording tool well in advance, especially with how to avoid echos due to acoustic feedback loops.
+
+But with this advice, you only have to put in some preparation and get all the benefits described above. So, conduct a C++ World Caf&eacute, and then let others know about your results!
+  </body>
+  </html>
